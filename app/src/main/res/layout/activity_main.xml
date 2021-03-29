@@ -20,13 +20,13 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="417dp"
-            android:layout_height="206dp"
+            android:layout_width="394dp"
+            android:layout_height="192dp"
             android:layout_marginTop="88dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logofixxed" />
 
         <Button
             android:id="@+id/btn_login"
