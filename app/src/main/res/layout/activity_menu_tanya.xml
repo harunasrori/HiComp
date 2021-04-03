@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuTanya">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_main"
+        app:itemIconTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu1">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/purple_main"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        />
+    <ImageButton
+        android:id="@+id/backarrow"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/arrow" />
+
+
+    <ImageButton
+        android:id="@+id/keranjang"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/keranjang" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="75dp"
+        android:layout_height="41dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toEndOf="@+id/backarrow"
+        android:ems="16"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Tanya"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="351dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="44dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/service" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="351dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/imageView6"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/service" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Konsultasi"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Servis"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Konsul mengenai sparepart  Laptop atau PC yang dibutuhkan"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Tanyakan mengenai kerusakan
+        pada Laptop atau PC"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/tanyaKonsul"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Tanya"
+        android:textColor="@color/purple_main"
+        android:textSize="16dp"
+        app:icon="@drawable/send"
+        app:iconTint = "@color/purple_main"/>
+
+    <Button
+        android:id="@+id/tanyaServis"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Tanya"
+        android:textColor="@color/purple_main"
+        android:textSize="16dp"
+        app:icon="@drawable/send"
+        app:iconTint="@color/purple_main" />
+
+
+</RelativeLayout>

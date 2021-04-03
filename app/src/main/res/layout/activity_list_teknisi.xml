@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:foregroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ListTeknisi">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/purple_main"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/backarrow"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageButton
+        android:id="@+id/keranjang"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/keranjang" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/backarrow"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/send"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/black"
+        android:hint="Search"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_main"
+        app:itemIconTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu1"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="173dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:strokeColor="@color/purple_main"
+        app:strokeWidth="2dp">
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:foregroundTint="#000000"
+            android:outlineAmbientShadowColor="@color/purple_main"
+            android:outlineSpotShadowColor="@color/purple_main"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/teknisi1" />
+
+            <TextView
+                android:id="@+id/nama1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imageView"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="ANWAR"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama1"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imageView"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="3dp"
+                android:text="Karyawan di Laptop Jaya"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:background="@drawable/rounded_corner"
+                android:scaleType="centerInside"
+                android:src="@drawable/send"></ImageButton>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="173dp"
+        android:layout_below="@+id/card"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="245dp"
+        app:strokeColor="@color/purple_main"
+        app:strokeWidth="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:foregroundTint="#000000"
+            android:outlineAmbientShadowColor="@color/purple_main"
+            android:outlineSpotShadowColor="@color/purple_main"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/teknisi2" />
+
+            <TextView
+                android:id="@+id/nama2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="BUDI"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama2"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="3dp"
+                android:text="Karyawan di Laptop Jaya"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:background="@drawable/rounded_corner"
+                android:src="@drawable/send"></ImageButton>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="wrap_content"
+        android:layout_height="173dp"
+
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        app:strokeColor="@color/purple_main"
+        app:strokeWidth="2dp">
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="158dp"
+            android:foregroundTint="#000000"
+            android:outlineAmbientShadowColor="@color/purple_main"
+            android:outlineSpotShadowColor="@color/purple_main"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/teknisi3" />
+
+            <TextView
+                android:id="@+id/nama3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imageView3"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="ADIS"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama3"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imageView3"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="3dp"
+                android:text="Karyawan di Laptop Jaya"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:background="@drawable/rounded_corner"
+                android:src="@drawable/send"></ImageButton>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
