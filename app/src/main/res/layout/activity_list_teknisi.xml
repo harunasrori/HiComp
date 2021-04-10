@@ -7,7 +7,8 @@
     android:layout_gravity="center"
     android:foregroundTint="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".ListTeknisi">
+    tools:context=".ListTeknisi"
+    android:background="@drawable/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -52,7 +53,7 @@
         android:layout_toEndOf="@+id/backarrow"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/send"
+        android:drawableLeft="@drawable/search"
         android:drawablePadding="5dp"
         android:drawableTint="@color/black"
         android:hint="Search"
@@ -82,11 +83,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+        app:shapeAppearance="@style/CardView.Dark"
         app:strokeColor="@color/purple_main"
         app:strokeWidth="2dp">
 
         <RelativeLayout
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:foregroundTint="#000000"
             android:outlineAmbientShadowColor="@color/purple_main"
@@ -127,11 +129,12 @@
                 android:textSize="13sp" />
 
             <ImageButton
+                android:id="@+id/profile1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginRight="18dp"
                 android:layout_marginBottom="5dp"
                 android:layout_toEndOf="@+id/imageView"
@@ -160,7 +163,7 @@
         >
 
         <RelativeLayout
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:foregroundTint="#000000"
             android:outlineAmbientShadowColor="@color/purple_main"
@@ -201,11 +204,12 @@
                 android:textSize="13sp" />
 
             <ImageButton
+                android:id="@+id/profile2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginRight="18dp"
                 android:layout_marginBottom="5dp"
                 android:layout_toEndOf="@+id/imageView2"
@@ -222,20 +226,19 @@
         android:layout_width="wrap_content"
         android:layout_height="173dp"
 
-        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/card2"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
 
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="-230dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="48dp"
         app:strokeColor="@color/purple_main"
         app:strokeWidth="2dp">
 
         <RelativeLayout
-            android:layout_width="370dp"
-            android:layout_height="158dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:foregroundTint="#000000"
             android:outlineAmbientShadowColor="@color/purple_main"
             android:outlineSpotShadowColor="@color/purple_main"
@@ -275,11 +278,12 @@
                 android:textSize="13sp" />
 
             <ImageButton
+                android:id="@+id/profile3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginRight="18dp"
                 android:layout_marginBottom="5dp"
                 android:layout_toEndOf="@+id/imageView3"

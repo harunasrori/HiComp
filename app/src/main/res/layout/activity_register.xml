@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDD023"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:theme="@style/Theme.AppCompat.NoActionBar"
@@ -29,10 +29,10 @@
             app:srcCompat="@drawable/logofixxed" />
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_regist"
             android:layout_width="304dp"
             android:layout_height="50dp"
-            android:text="@string/action_sign_in_short"
+            android:text="Register"
             android:textColor="@android:color/black"
             android:textSize="20dp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton.Rounded"
@@ -41,22 +41,56 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+        <Button
+            android:id="@+id/toLogin"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Rounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="136dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_regist" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="296dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="#FFFFFF"
-        android:hint="Username"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint ="Username"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
         android:id="@+id/password"

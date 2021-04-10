@@ -4,14 +4,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon_new_new"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icon_new_new"
         android:supportsRtl="true"
         android:theme="@style/Theme.HiComp">
-        <activity android:name=".ListTeknisi"></activity>
+        <activity android:name=".InfoProduk"></activity>
+        <activity android:name=".HalamanKatalog" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".profile" />
+        <activity android:name=".Dompet" />
+        <activity android:name=".FAQ" />
+        <activity android:name=".Teknisi3" />
+        <activity android:name=".Teknisi2" />
+        <activity android:name=".Teknisi1" />
+        <activity android:name=".ListTeknisi" />
         <activity android:name=".MenuTanya" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,10 +29,10 @@
         </activity>
         <activity
             android:name=".HomePage"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".LoginActivity" />
         </activity>
 
         <meta-data

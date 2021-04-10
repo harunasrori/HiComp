@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dompet"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/purple_main"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/backarrow"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toEndOf="@+id/backarrow"
+        android:ems="16"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center"
+        android:text="Dompet Anda"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="335dp"
+        android:layout_height="550dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="120dp"
+        app:cardCornerRadius="30dp"
+        app:shapeAppearance="@style/CardView.Dark"
+        app:strokeColor="@color/purple_main"
+        app:strokeWidth="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundTint="#000000"
+            android:outlineAmbientShadowColor="@color/purple_main"
+            android:outlineSpotShadowColor="@color/purple_main"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="163dp"
+                android:layout_height="161dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/rounded_corner"
+                android:scaleType="center"
+                android:src="@drawable/dompett" />
+
+            <TextView
+                android:id="@+id/nama1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="90dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:fontFamily="@font/montserrat"
+                android:text="Riwayat Transaksi"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/nama4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="55dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:fontFamily="@font/montserrat"
+                android:text="Riwayat Pemasukan"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama1"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Rp. 5.260.000"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/nama5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama4"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Rp. 2.050.000"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+            <ImageButton
+                android:id="@+id/profile1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="150dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:background="@drawable/rounded_corner"
+                android:scaleType="centerInside"
+                android:src="@drawable/send"></ImageButton>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="140dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Saldo anda"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="140dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Saldo anda"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="140dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Rp. 6.000.000,00"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <View
+                android:id="@+id/garis1"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="0dp"
+                android:background="@color/purple_main" />
+
+            <View
+                android:id="@+id/garis2"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="123dp"
+                android:layout_marginEnd="0dp"
+                android:background="@color/purple_main" />
+
+            <Button
+                android:id="@+id/toKeranjang"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/garis1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="23dp"
+                android:backgroundTint="@color/yellow"
+                android:text="Keranjang"
+                android:textColor="@color/purple_main"
+                app:icon="@drawable/keranjang"
+                app:iconSize="16dp"
+                app:iconTint="#351C56" />
+
+            <Button
+                android:id="@+id/Addsaldo"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/garis1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="118dp"
+                android:layout_marginBottom="23dp"
+                android:backgroundTint="@color/yellow"
+                android:text="Isi Saldo"
+                android:textColor="@color/purple_main"
+                app:icon="@drawable/keranjang"
+                app:iconSize="13dp"
+                app:iconTint="#351C56" />
+
+            <Button
+                android:id="@+id/ambilDana"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/garis1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="118dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="23dp"
+                android:layout_toEndOf="@+id/Addsaldo"
+                android:backgroundTint="@color/yellow"
+                android:text="Tarik Dana"
+                android:textColor="@color/purple_main"
+                app:icon="@drawable/keranjang"
+                app:iconSize="13dp"
+                app:iconTint="#351C56" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

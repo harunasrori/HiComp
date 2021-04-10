@@ -9,14 +9,41 @@
     android:gravity="center"
     tools:context=".HomePage">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:background="@color/purple_main"
+        app:itemIconTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu1">
 
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_host_fragment1"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="-50dp"-->
+<!--        app:defaultNavHost="true"-->
+<!--        android:layout_above="@id/bottom_navigation"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:navGraph="@navigation/mobile_navigation" />-->
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
-        android:layout_width="430dp"
-        android:layout_height="78dp"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
         android:layout_below="@+id/imageView2"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="UselessParent">
@@ -24,7 +51,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingStart="30dp">
 
             <ImageButton
                 android:id="@+id/button1"
@@ -50,21 +78,21 @@
                 android:text="Button 1"
                 app:srcCompat="@drawable/dvd" />
 
-                        <ImageButton
-                            android:id="@+id/button4"
-                            android:layout_width="110dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:text="Button 1"
-                            app:srcCompat="@drawable/fan" />
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:text="Button 1"
+                app:srcCompat="@drawable/fan" />
 
-                        <ImageButton
-                            android:id="@+id/button5"
-                            android:layout_width="110dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:text="Button 1"
-                            app:srcCompat="@drawable/ssd_sata" />
+            <ImageButton
+                android:id="@+id/button5"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:text="Button 1"
+                app:srcCompat="@drawable/ssd_sata" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -105,8 +133,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
         android:background="#00FFEB3B"
         android:backgroundTint="@color/purple_main"
         android:foregroundGravity="center"
@@ -121,13 +149,15 @@
         app:srcCompat="@drawable/rounded_corner" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonwallet"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
         android:layout_width="114dp"
         android:layout_height="49dp"
+        android:layout_alignStart="@+id/imageView2"
         android:layout_alignEnd="@+id/imageView2"
         android:layout_alignBottom="@+id/imageView2"
-        android:layout_marginEnd="115dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
         android:layout_marginBottom="15dp"
         android:text="DOMPET"
         android:textColor="#351C56"
@@ -164,7 +194,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/horizontalScrollView2"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="99dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="APA YANG ANDA BUTUHKAN?"
@@ -175,30 +205,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="37dp"
-        android:background="@color/purple_main"
-        app:itemIconTint="@color/yellow"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu1">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="277dp"
         android:layout_height="32dp"
-        android:layout_alignEnd="@+id/imageView3"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_marginEnd="-67dp"
-        android:layout_marginBottom="78dp"
+        android:layout_above="@+id/buttonwallet"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="12dp"
         android:fontFamily="@font/quicksand_bold"
         android:shadowColor="#351C56"
         android:text="USERNAME"
@@ -206,20 +223,17 @@
         android:textAllCaps="true"
         android:textColor="#351C56"
         android:textColorHighlight="#351C56"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.824" />
+        android:textSize="24dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/fotoProfile"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton.Rounded"
         android:layout_width="141dp"
         android:layout_height="140dp"
+        android:layout_alignStart="@+id/imageView2"
         android:layout_alignEnd="@+id/imageView2"
         android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginStart="109dp"
         android:layout_marginEnd="102dp"
         android:layout_marginBottom="123dp"
         android:backgroundTint="@color/purple_main"
@@ -250,9 +264,11 @@
         android:layout_width="170dp"
         android:layout_height="132dp"
         android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="10dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
@@ -265,9 +281,11 @@
         android:layout_width="176dp"
         android:layout_height="137dp"
         android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintStart_toStartOf="parent"
@@ -322,16 +340,16 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="66dp"
-        android:layout_height="32dp"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
         android:layout_alignStart="@+id/buttonTanya"
         android:layout_alignTop="@+id/buttonTanya"
         android:layout_alignEnd="@+id/buttonTanya"
         android:layout_alignBottom="@+id/buttonTanya"
         android:layout_marginStart="54dp"
         android:layout_marginTop="51dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="43dp"
         android:fontFamily="@font/montserrat_bold"
         android:gravity="center"
         android:text="TANYA"
@@ -341,7 +359,7 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="94dp"
-        android:layout_height="32dp"
+        android:layout_height="29dp"
         android:layout_alignStart="@+id/imageButton2"
         android:layout_alignTop="@+id/imageButton2"
         android:layout_alignEnd="@+id/imageButton2"
@@ -349,12 +367,23 @@
         android:layout_marginStart="39dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="41dp"
         android:fontFamily="@font/montserrat_bold"
         android:gravity="center"
         android:text="BELANJA"
         android:textColor="@color/white"
         android:textSize="18dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Rounded"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-50dp"
+        app:srcCompat="@drawable/paper" />
 
 
 </RelativeLayout>
